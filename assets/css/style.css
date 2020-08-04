@@ -8,18 +8,127 @@
     --primary-color: rgb(49, 52, 62);
     --secondary-color: rgb(159, 198, 205);
     --tertiary-color: rgb(70, 86, 113);
+}
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
 }
 
 header {
-    background-color: rgb(49, 52, 62);
-    color: #2d3b45;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 8px 8px 0;
+    
 }
 
 header h1 {
     background-color: var(--secondary-color);
+    font-size: 30px;
+    width: 25%;
+    text-align: right;
+    
+    
 }
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li { 
+    
+}
+header nav ul li a {
+    padding: 0px 5px;
+    font-size: 2.2vw;
+    
+}
+
+/*******
+* HERO *
+********/
+
+.hero {
+    background-image: url("../images/hero-image.png");
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    height: 225px;
+    margin-bottom: 8px;
+}
+
 
 body {
     background-color: rgb(238, 238, 249);
+}
+
+/**********
+* CONTACT *
+***********/
+
+section {
+    display: flex;
+    color: var(--tertiary-color);
+    width: 100%;
+}
+
+.section-title {
+    /* display: flex; */
+    border-right: 2px solid var(--tertiary-color);
+    text-align: right;
+    /* margin: 10px 5px 10px 75px; */
+}
+section ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+section p { 
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+
+.bio {
+    /* margin: auto  10px auto 40px; */
+    padding-right: 5px;
+}
+
+.work{
+    margin: auto  10px auto 40px;
+}
+
+.contact {
+    margin: auto  10px auto 40px;
+}
+
+
+.bio-text {
+
 }
