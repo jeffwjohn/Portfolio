@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: rgb(49, 52, 62);
+    --secondary-color: rgb(159, 198, 205);
+    --tertiary-color: rgb(70, 86, 113);
+
+}
+
+header {
+    background-color: rgb(49, 52, 62);
+    color: #2d3b45;
+}
+
+header h1 {
+    background-color: var(--secondary-color);
+}
+
+body {
+    background-color: rgb(238, 238, 249);
+}
