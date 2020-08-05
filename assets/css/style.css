@@ -81,6 +81,8 @@ header nav ul li a {
 ****************************/
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
     background-color: rgb(238, 238, 249);
@@ -92,7 +94,7 @@ section {
     width: 100%;
 }   
 
-.section-title {
+/* .section-title { */
     display: flex;
     border-right: 2px solid var(--tertiary-color);
     text-align: right;
@@ -103,25 +105,30 @@ section {
 ****************************/
 
 .bio {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     width: 90%;
     margin: 20px auto 0 auto;
     justify-content: center;
+    border-left: 2px solid var(--tertiary-color);
+    
+    /* order: 2; */
 }
 
 .bio-text-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 20px;
+    
+    
 }
 
 .bio-text {
     margin: 10px;
+    
 }
 
-.bio .section-title {
+/* .bio .section-title { */
     padding: 10px 10px 10px 43px;
 }
 
@@ -130,19 +137,21 @@ section {
 ****************************/
 
 .work {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     width: 90%;
-    margin: 0px auto;
-    justify-content: flex-start;
+    margin: 20px auto 0 auto;
+    justify-content: center;
+    /* order: 3; */
 }
 
-.work .section-title {
+/* .work .section-title { */
     padding: 10px 10px 10px 52px;
 }
 
 .work .grid-container {
     margin: 20px;
+    border-left: 2px solid var(--tertiary-color);
 }
 
 .work .grid-container div {
@@ -154,15 +163,18 @@ section {
 ****************************/
 
 .contact {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
-    width: 90%;
+    width: 
     margin: 0px auto;
     justify-content: flex-start;
+    border-left: 2px solid var(--tertiary-color);
+    height: 100px;
+    /* order: 4; */
     
 }
 
-.contact .section-title {
+/* .contact .section-title { */
     padding: 10px 10px 10px 0px;
     
 }
@@ -210,4 +222,42 @@ header a:hover {
 .contact a:hover {
     background-color: var(--tertiary-color);
     color: rgb(238, 238, 249);
+}
+
+
+/***************************
+*   TITLES COLUMN  *
+****************************/
+
+.titles-column-wrapper {
+    /* border: 1px solid red; */
+    display: flex;
+    margin-right: 20px;
+    
+}
+
+.titles-column {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.titles-column h2 {
+    text-align: right;
+    width: 100%;
+    
+    
+    
+}
+
+.section-titles-wrapper {
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    
+}
+
+.section-only-wrapper {
+    /* border: 1px solid greenyellow; */
 }
