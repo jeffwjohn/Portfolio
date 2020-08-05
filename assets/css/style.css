@@ -26,9 +26,10 @@ header {
 
 header h1 {
     background-color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 3.5vw;
     width: 25%;
     text-align: right;
+    padding-right: 10px;
     
     
 }
@@ -98,37 +99,70 @@ section {
     text-align: right;
     /* margin: 10px 5px 10px 75px; */
 }
-section ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    list-style: none;
-    
-}
 
-section p { 
+/* section p {  
     display: block;
     width: 100%;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 20px;*/    
+}
+
+section div  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
+     
 }
 
 
 .bio {
-    /* margin: auto  10px auto 40px; */
-    padding-right: 5px;
+    border: 1px solid red;
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.bio-text-container {
+    flex-direction: column;
+}
+
+.bio-text {
+    margin: 10px;
+}
+
+.bio .section-title {
+    padding: 10px 10px 10px 46px;
 }
 
 .work{
-    margin: auto  10px auto 40px;
+    border: 1px solid red;
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: flex-start;
+}
+
+.work .section-title {
+    padding: 10px 10px 10px 57px;
 }
 
 .contact {
-    margin: auto  10px auto 40px;
+    border: 1px solid red;
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
 }
 
-
-.bio-text {
-
+.contact .section-title {
+    padding: 10px 10px 10px 0px;
 }
+
+.contact ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+
