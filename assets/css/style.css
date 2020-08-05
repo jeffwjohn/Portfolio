@@ -10,10 +10,9 @@
     --tertiary-color: rgb(70, 86, 113);
 }
 
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: normal;
-}
+/***************************
+*   HEADER  *
+****************************/
 
 header {
     background-color: var(--primary-color);
@@ -30,8 +29,7 @@ header h1 {
     width: 25%;
     text-align: right;
     padding-right: 10px;
-    
-    
+        
 }
 
 header a {
@@ -57,13 +55,13 @@ header nav ul li {
 }
 header nav ul li a {
     padding: 0px 5px;
-    font-size: 2.2vw;
+    font-size: 2vw;
     
 }
 
-/*******
-* HERO *
-********/
+/***************************
+*   HERO  *
+****************************/
 
 .hero {
     background-image: url("../images/hero-image.png");
@@ -78,54 +76,45 @@ header nav ul li a {
     margin-bottom: 8px;
 }
 
+/***************************
+*   BODY  *
+****************************/
 
 body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     background-color: rgb(238, 238, 249);
 }
-
-/**********
-* CONTACT *
-***********/
 
 section {
     display: flex;
     color: var(--tertiary-color);
     width: 100%;
-}
+}   
 
 .section-title {
-    /* display: flex; */
+    display: flex;
     border-right: 2px solid var(--tertiary-color);
     text-align: right;
-    /* margin: 10px 5px 10px 75px; */
 }
 
-/* section p {  
-    display: block;
-    width: 100%;
-    text-align: left;
-    margin-left: 20px;*/    
-}
-
-section div  {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-     
-}
-
+/***************************
+*   BIO  *
+****************************/
 
 .bio {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     justify-content: center;
 }
 
 .bio-text-container {
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .bio-text {
@@ -133,36 +122,92 @@ section div  {
 }
 
 .bio .section-title {
-    padding: 10px 10px 10px 46px;
+    padding: 10px 10px 10px 43px;
 }
 
-.work{
-    border: 1px solid red;
+/***************************
+*   WORK  *
+****************************/
+
+.work {
+    /* border: 1px solid red; */
     display: flex;
     width: 90%;
-    margin: 20px auto;
+    margin: 0px auto;
     justify-content: flex-start;
 }
 
 .work .section-title {
-    padding: 10px 10px 10px 57px;
+    padding: 10px 10px 10px 52px;
 }
 
+.work .grid-container {
+    margin: 20px;
+}
+
+.work .grid-container div {
+    margin: 10px;
+}
+
+/***************************
+*   CONTACT  *
+****************************/
+
 .contact {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     width: 90%;
-    margin: 20px auto;
+    margin: 0px auto;
+    justify-content: flex-start;
+    
 }
 
 .contact .section-title {
     padding: 10px 10px 10px 0px;
+    
+}
+
+h2 {
+    font-size: initial;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .contact ul {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
+       
 }
 
+.contact ul li {
+    border-bottom: 2px solid var(--tertiary-color);
+    padding-bottom: 2px;
+    
+}
+
+.contact a:link {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.contact a:visited {
+    text-decoration: none;
+    color: var(--tertiary-color)
+  }
+
+header a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+
+.contact a:hover {
+    background-color: var(--tertiary-color);
+    color: rgb(238, 238, 249);
+}
