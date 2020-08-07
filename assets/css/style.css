@@ -29,8 +29,9 @@ header h1 {
     width: 30%;
     height: fit-content;
     text-align: right;
+    padding-top: 10px;
     padding-right: 10px;
-        
+    font-family: fantasy;    
 }
 
 header a {
@@ -42,14 +43,22 @@ header nav {
     display: flex;
     align-items: center;
     margin-top: 8px;
+    justify-content: space-around;
+    width: 50%;
     
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    
+    justify-content: space-around;
+
 }
+
+header nav ul li {
+    padding: 0 10px;
+}
+
 
 
 header nav ul li a {
@@ -123,7 +132,8 @@ section {
 .bio-text-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;        
+    flex-wrap: wrap;
+    line-height: 1.5;        
 }
 
 .bio-text {
@@ -313,6 +323,7 @@ figure a:hover {
 
     header nav {
         align-content: center;
+        width: 100%
     }
 
     header nav ul {
@@ -416,6 +427,10 @@ figure a:hover {
 
     .hero {
         background-position-x: -30px;
+    }
+
+    header nav ul li {
+        padding: 0;
     }
 
 }
