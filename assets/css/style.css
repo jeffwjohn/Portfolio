@@ -63,19 +63,17 @@ header nav ul li a {
 ****************************/
 
 .hero {
-    background-image: url("../images/hero-image.png");
+    background-image: url("../images/JeffJohnston-16 copy.jpg");
     background-size: cover;
-    /* background-attachment: fixed; */
-    background-position: center;
+    /* background-position: center; */
+    background-position: top;
     background-repeat: no-repeat;
-    /* background-size: auto; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-wrap: wrap; */
-    /* align-items: flex-start; */
-    /* width: 100%; */
-    height: 225px;
+    height: 700px;
     margin-bottom: 8px;
+    
+   
+
+
 }
 
 /***************************
@@ -153,7 +151,7 @@ section {
 }
 
 .container {
-    width: 60%;
+    width: 100%;
     margin: 2rem auto; 
   }
   
@@ -213,14 +211,6 @@ section {
   
   }
   
-  .gallery__item--6 {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 6;
-    grid-row-end: 9;
-  
-  }
-  
 /***************************
 *   CONTACT  *
 ****************************/
@@ -235,13 +225,10 @@ section {
     margin: 20px auto 20px auto;
     /* order: 4; */
 }
-    
-
 
 /* .contact .section-title { */
     /* padding: 10px 10px 10px 0px; */
     
-
 .contact ul {
     display: flex;
     width: 100%;
@@ -278,7 +265,123 @@ header a:hover {
     color: rgb(238, 238, 249);
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 8px 0px 8px 0px;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        display: block;
+        
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 50px;           
+    }
 
+    header nav {
+        align-content: center;
+    }
 
+    header nav ul {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-evenly;
+        
+        
+    }
+    header nav ul li a {
+        font-size: 18px;
+        
+    }
+
+    .hero {
+        /* background-position-x: -30px; */
+        height: 500px;
+        margin-bottom: 8px;
+    }
     
+
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .gallery__item--1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        /* background-position: right 20% bottom 100%; */
+        
+
+      }
+      
+      .gallery__item--2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      
+      }
+      
+      .gallery__item--3 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+      
+      }
+      
+      .gallery__item--4 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        background-color: black;
+        background-size: contain;
+      
+      }
+      
+      .gallery__item--5 {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+      
+      }
+
+    .contact {
+        padding-top: 10px;
+    }
+
+    .contact ul {
+        display: block;
+        text-align: center;
+           
+    }
+    
+    .contact ul li {
+        border-bottom: 1px dotted var(--tertiary-color);
+        padding: 5px;
+        width: 50%;
+        justify-content: center;
+        margin: 0 auto;
+        line-height: 1.5;
+        
+    }
+
+}
+
+/* MEDIA QUERY FOR PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    .hero {
+        background-position-x: -30px;
+    }
+
+}
+    /*********************/
 
