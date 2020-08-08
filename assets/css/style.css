@@ -31,7 +31,7 @@ header h1 {
     text-align: right;
     padding-top: 10px;
     padding-right: 10px;
-    font-family: fantasy;    
+    font-family: fantasy, Helvetica, Arial, sans-serif;    
 }
 
 header a {
@@ -305,7 +305,10 @@ figure a:hover {
     color: rgb(238, 238, 249);
 }
 
+/***************************************/
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
+/***************************************/
+
 @media screen and (max-width: 768px) {
     header {
         padding: 8px 0px 8px 0px;
@@ -421,8 +424,10 @@ figure a:hover {
     }
 
 }
-
+/**************************************/
 /* MEDIA QUERY FOR PHONES AND SMALLER */
+/**************************************/
+
 @media screen and (max-width: 575px) {
 
     .hero {
