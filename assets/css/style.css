@@ -170,10 +170,26 @@ section {
   
   .gallery__img {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     object-fit: cover;
     display: block; 
+    background-position: right;
   }
+
+  .gallery__img::after {
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 79, 56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 20;
+  }
+
+  .gallery__img:hover::after {
+    opacity: 0.5;
+}
   
   .gallery__item--1 {
     grid-column-start: 1;
@@ -363,11 +379,14 @@ figure a:hover {
         grid-template-rows: repeat(6, 1fr);
         
     }
+
+
     
     .gallery__item--1 {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
         /* background-position: right 20% bottom 100%; */
+        
       }
       
       .gallery__item--2 {
