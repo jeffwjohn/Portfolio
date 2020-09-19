@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Purpose
-A website that catalogs and showcases projects developed entirely or in part by Jeff. 
+A website that catalogs and showcases projects developed entirely or in part by Jeff, and includes his short bio, a resume, and contact information. 
 
 ## Built With
 * HTML
@@ -9,6 +9,8 @@ A website that catalogs and showcases projects developed entirely or in part by 
 
 ## Website
 https://jeffwjohn.github.io/Portfolio/
+
+![Screenshot](assets/images/screenshot.png)
 
 ## Contribution
 Made with ❤️ by Jeff Johnston
