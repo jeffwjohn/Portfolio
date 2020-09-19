@@ -79,7 +79,7 @@ header a:hover {
 ****************************/
 
 .hero {
-    background-image: url("/assets/images/JeffJohnston-img.png");
+    background-image: url("https://github.com/jeffwjohn/Portfolio/blob/master/assets/images/JeffJohnston-img.png?raw=true");
     background-size: cover;
     /* background-position: center; */
     background-position: top;
