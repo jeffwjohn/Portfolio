@@ -12,7 +12,4 @@ https://jeffwjohn.github.io/Portfolio/
 
 ![Screenshot](assets/images/screenshot.png)
 
-## Contribution
-Made with ❤️ by Jeff Johnston
-
 ### ©️2020 Jeff Johnston
